@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- JQUERY -->
+    <script src="../jquery.js"></script>    
+        <title>Contización de Seguro</title>
+</head> 
+<body>
+  <div class="container-fluid">
+      <div class="navigation-wrap bg-light start-header start-style">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-md navbar-light">
+              
+                <a class="navbar-brand" target="_blank">Seguros Xmotos</a>  
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto py-4 py-md-0">
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                      <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                      <a class="nav-link" href="#footer">Contactanos</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>    
+            </div>
+          </div>
+        </div>
+      </div>          
+
+
+
+      <section class="formulario">
+          <div class="container">
+              <div id="msj-error-cotizador"></div>
+
+          <form class="needs-validation" novalidate>
+              <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                      <label for="validationCustom01">Nombre</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su nombre" required>
+                      <div class="invalid-feedback">
+                      Ingrese su Nombre
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                      <label for="validationCustom02">Apellidos</label>
+                      <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese sus Apellidos" required>
+                      <div class="invalid-feedback">
+                        Ingrese su apellido
+                      </div>
+                  </div>
+              </div>
+
+              <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                      <label for="validationCustom03">Correo Electrónico</label>
+                      <input type="text" class="form-control" id="validationCustom03" placeholder="Ingrese su Correo Electrónico" required>
+                      <div class="invalid-feedback">
+                        Ingrese su correo electrónico
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                      <label for="validationCustom04">Numero de telefono</label>
+                      <input type="text" class="form-control" id="validationCustom04" placeholder="11-xxxxxxxx" required>
+                      <div class="invalid-feedback">
+                        Ingrese su numero de telefono
+                      </div>
+                  </div>
+                    
+                  <div class="col-md-3 mb-3">
+                      <label for="validationCustom05">Provincia</label>
+                      <select class="custom-select" id="validationCustom05" required>
+                          <option selected disabled value="">Elija una Provincia</option>
+                          <option>C.A.B.A</option>
+                          <option>Buenos Aires</option>
+                          <option>Cordoba</option>
+                          <option>Santa Fe</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor seleccione una provincia
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                      <label for="validationCustom06">Marca y Modelo</label>
+                      <select class="custom-select" id="validationCustom06" required>
+                          <option selected disabled value="">Elija la marca y el modelo de su moto</option>
+                          <option>Bajaj NS200</option>
+                          <option>Bajaj Boxer 150</option>
+                          <option>Corven Txr 250L</option>
+                          <option>Corven Mirage 110</option>
+                          <option>Honda Xr 250 Tornado</option>
+                          <option>Honda Cb 250 Twister</option>
+                          <option>Yamaha Fz 2.0</option>
+                          <option>Yamaha Xtz 250</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor seleccione la marca y el modelo de su moto
+                      </div>
+                  </div>
+                    
+                  <div class="col-md-3 mb-3">
+                      <label for="validationCustom07">Año</label>
+                      <select class="custom-select" id="validationCustom07" required>
+                          <option selected disabled value="">Elija el año de su moto</option>
+                          <option>2021</option>
+                          <option>2020</option>
+                          <option>2019</option>
+                          <option>2018</option>
+                          <option>2017</option>
+                          <option>2016</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor seleccione el año de su moto
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                      <label for="validationCustom08">Tipo de Poliza</label>
+                      <select class="custom-select" id="validationCustom08" required>
+                          <option selected disabled value="">Elija la poliza que desea para su moto</option>
+                          <option>Bronze</option>
+                          <option>Silver</option>
+                          <option>Gold</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor seleccione la poliza para su moto
+                      </div>
+                  </div>
+              </div>              
+              <input id="btnCotizar" class="btn btn-success btn-lg btn-block container" type="button" onclick="cotizarSeguro()" value="Cotizar"/>
+              </form>
+              <div id="resumen">
+              </div>
+          </div>
+      </section>
+    
+
+    <footer class="footer-section" id="footer">
+      <div class="container">
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Encuentranos</h3>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>Avenida Francisco Beiro 2395 (C1419HXC)</p>
+                              <p>C.A.B.A, Argentina.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Llamanos</h3>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>0810-0000-0000-00</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Escribenos</h3>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>xmotos@info.com</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2021, All Right Reserved</p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Policy</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+
+    <!--Local JS-->
+<script src="../form.js"></script>
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

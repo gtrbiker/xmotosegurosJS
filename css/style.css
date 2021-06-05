@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+/* NAV BAR
+================================================== */
+
+.start-header {
+  opacity: 1;
+  transform: translateY(0);
+  padding: 20px 0;
+  box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+  -webkit-transition : all 0.3s ease-out;
+  transition : all 0.3s ease-out;
+}
+
+.navigation-wrap{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition : all 0.3s ease-out;
+  transition : all 0.3s ease-out;
+}
+
+.nav-link{
+  color: #212121 !important;
+  font-weight: 500;
+    transition: all 200ms linear;
+}
+.nav-item:hover .nav-link{
+  color:#e74a1ae0 !important;
+}
+
+.nav-item:after{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color:#e74a1ae0;
+  opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+  bottom: 0;
+  opacity: 1;
+}
+.nav-item.active:hover:after{
+  opacity: 0;
+}
+.nav-item{
+  position: relative;
+    transition: all 200ms linear;
+}
+
+/*-----------BANNER------------------*/
+.banner{
+    margin-top: 100px;
+    display: none;
+    
+}
+/*-----------SECCION SOBRE NOSOTROS------------------*/
+
+#about{
+    background-color: #e74a1ae0;
+    color:white;
+    text-align: center;
+    display: none;
+    
+}
+
+#tituloAbout{
+    font-size: 52px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
+
+#textoAbout{
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+
+/*-----------COMO CONTRATAR------------------*/
+#comoContratar{
+    font-size: 42px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.pasos{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#botonVer{
+    background-color:white;
+    font-size: 24px;
+    font-weight: bold;
+    border-color:#e74a1ae0;
+    border-width:3px;
+    border-style: solid;
+    color:#e74a1ae0 ;
+    
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.formulario{
+    display: none;
+}
+
+#efectoTarjeta{
+    display: none;
+}
+
+h5{color: black; }
+
+.texto { color:black}
+
+#serv{
+    background-color: #e74a1ae0;
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+
+#tituloServ{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+#table{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.formulario{
+  margin-top: 100px;
+  padding-top: 50px;
+  margin-bottom: 87px;
+}
+
+#btnCotizar{
+  background-color:white;
+  font-size: 24px;
+  font-weight: bold;
+  border-color:#e74a1ae0;
+  border-width:3px;
+  border-style: solid;
+  color:#e74a1ae0 ;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+/*-----------FOOTER------------------*/
+.footer-section {
+    background: #151414;
+    position: relative;
+  }
+
+  .footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+        color: #7e7e7e;
+    line-height: 28px;
+  }
+
+  .footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+  }
+
+  .copyright-area{
+    background: #202020;
+    padding: 25px 0;
+  }
+
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+  }

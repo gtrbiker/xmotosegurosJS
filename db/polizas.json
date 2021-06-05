@@ -1,0 +1,33 @@
+[
+
+    {
+        "Poliza": "Bronze",
+        "Cobertura": "Responsabilidad Civil",
+        "Monto_RC": "$10.000.000",
+        "Franquicia": "3% del valor",
+        "Cobertura_contra_incendio": "No",
+        "Servicio_de_asistencia_y_remolque":"Si",
+        "Usos_aceptados": "Particular"
+    },
+
+    {
+        "Poliza": "Silver",
+        "Cobertura": "Responsabilidad Civil y Cobertura por robo/hurto",
+        "Monto_RC": "$10.000.000",
+        "Franquicia": "3% del valor",
+        "Cobertura_contra_incendio": "si",
+        "Servicio_de_asistencia_y_remolque":"Si",
+        "Usos_aceptados": "Particular"
+    },
+    
+    {
+        "Poliza": "Gold",
+        "Cobertura": "Responsabilidad Civil y Cobertura por robo/hurto",
+        "Monto_RC": "$10.000.000",
+        "Franquicia": "1% del valor",
+        "Cobertura_contra_incendio": "Si",
+        "Servicio_de_asistencia_y_remolque":"Si",
+        "Usos_aceptados": "Particular y Comercial"
+    }
+
+]
